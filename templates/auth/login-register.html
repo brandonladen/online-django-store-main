@@ -1,0 +1,68 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block content %}
+<div class="breadcrumb-area pt-35 pb-35 bg-gray-3">
+    <div class="container">
+        <div class="breadcrumb-content text-center">
+            <ul>
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+                <li class="active">login/Register</li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="login-register-area pt-100 pb-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-7 col-md-12 ml-auto mr-auto">
+                <div class="login-register-wrapper">
+                    <ul class="nav nav-tabs">
+                        <li class="nav-item">
+                            <a class="nav-link active" data-toggle="tab" href="#lg1">
+                                <h4>Login</h4>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" data-toggle="tab" href="#lg2">
+                                <h4>Register</h4>
+                            </a>
+                        </li>
+                    </ul>
+                    <div class="tab-content">
+                        <div id="lg1" class="tab-pane fade show active">
+                            <div class="login-form-container">
+                                <div class="login-register-form">
+                                    <form action="#" method="post">
+                                        <input class="form-control" type="text" name="user-name" placeholder="Username">
+                                        <input class="form-control" type="password" name="user-password" placeholder="Password">
+                                        <div class="form-check">
+                                            <input class="form-check-input" type="checkbox" id="rememberMe">
+                                            <label class="form-check-label" for="rememberMe">Remember me</label>
+                                            <a class="forgot-password" href="#">Forgot Password?</a>
+                                        </div>
+                                        <button type="submit" class="btn btn-primary"><span>Login</span></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="lg2" class="tab-pane fade">
+                            <div class="login-form-container">
+                                <div class="login-register-form">
+                                    <form action="#" method="post">
+                                        <input class="form-control" type="text" name="user-name" placeholder="Username">
+                                        <input class="form-control" type="password" name="user-password" placeholder="Password">
+                                        <input class="form-control" name="user-email" placeholder="Email" type="email">
+                                        <button type="submit" class="btn btn-primary"><span>Register</span></button>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
